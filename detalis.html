@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Detalis</title>
+
+    <h2 align="center">OFFICE OF THE CONVENOR,CENTRALIZE SELECTION AND APPOINTMENT</h2>
+    <h2 align="center" >COMMITTEE-CUM-DISTRICT & JUDGE,PATNA</h2>
+</head>
+<body style="background: yellow;"><br><br>
+	<fieldset style="background-color:white;">
+	<p>
+		<center>
+            <a href="home.html" style="color: blue;">HOME</a>&nbsp;&nbsp;&nbsp;
+	        <a href="registration.html" style="color:blue;">REGISTRATION</a>&nbsp;&nbsp;&nbsp; 
+	        <a href="detalis.html" style="color:blue;">DETALIS</a>&nbsp;&nbsp;&nbsp;
+	        <a href="education.html" style="color:blue;">EDUCATION</a>&nbsp;&nbsp;&nbsp;
+	        <a href="sing.html" style="color:blue;">SING</a>&nbsp;&nbsp;&nbsp;
+        </center>
+     </fieldset>
+   </p>
+    <p>
+   	<fieldset style="background-color: white;">
+   	<hr><h style="color: darkred;">IMPORTANT DATES</h><hr><br>
+   	<marquee scrollamount="15" direction="left" behavior="slide">
+   		<font color="red" size="3">Starting Date for Application 20th October 2022</font></marquee><br>
+   		<marquee scrollamount="15" direction="right" behavior="slide">
+   			<font color="green" size="3">Last Date for online Submission 17th December 2022</font>
+   	</marquee>
+   	</p>
+   </fieldset>
+   	  <fieldset style="background-color:white">
+   	  		<hr size="2" style="background-color: red;"><b>PERSONAL DETALIS</b><hr size="2" style="background-color: red;">
+   	  		<fieldset>
+   	  		<table cellspacing="10">
+   	  			<tr>
+   	  				<td align="left"><label><b>Name of Candidate :-</b></label></td>
+   	  				<td>
+   	  					<input type="text" name="" size="50" id="name">
+   	  				</td>
+   	  			</tr>
+   	  			<tr>
+   	  				<td align="left"><label><b>Father's Name :-</b></label></td>
+				      <td>
+					      <input type="left" name="" size="50" id="fat">
+		            </td>
+		         </tr>
+		         <tr>
+		         	<td align="left"><label><b>Mother's Name :-</b></label></td>
+		   	      <td>
+		   	         <input type="text" name="" size="50" id="mot">
+		            </td>
+		         </tr>
+		         <tr>
+		   	      <td align="left"><label><b>Date of Brith :-</b></label></td>
+		   	      <td>
+		   		      <input type="date" name="" size="50" id="dob">
+		   	      </td>
+		         </tr>
+		      </table>
+		   </fieldset>
+		   <fieldset>
+		   	<hr size="2" style="background-color: red;">ADDERES<hr size="2" style="background-color: red;">
+		   	<table cellspacing="10">
+		   	<tr>		   		
+		   		<td align="left"><label><b>State :-</b></label></td>
+   	  		   <td>
+   	  			   <input type="text" name="" size="50" id="sta">
+   	  		   </td>
+   	  	   </tr>
+   	  	   <tr>		   		
+		   		<td align="left"><label><b>District :-</b></label></td>
+   	  		   <td>
+   	  			   <input type="text" name="" size="50" id="dis">
+   	  		   </td>
+   	  	   </tr>
+   	  	   <tr>		   		
+		   		<td align="left"><label><b>Village :-</b></label></td>
+   	  		   <td>
+   	  			   <input type="text" name="" size="50" id="vill">
+   	  		   </td>
+   	  	   </tr>
+   	  	   <tr>		   		
+		   		<td align="left"><label><b>Post Office :-</b></label></td>
+   	  		   <td>
+   	  			   <input type="text" name="" size="50" id="po">
+   	  		   </td>
+   	  	   </tr>
+   	  	   <tr>		   		
+		   		<td align="left"><label><b>Pin Code :-</b></label></td>
+   	  		   <td>
+   	  			   <input type="text" name="" size="50" id="pin">
+   	  		   </td>
+   	  	   </tr>
+   	  	   <tr>		   		
+		   		<td align="left"><label><b>Police Station :-</b></label></td>
+   	  		   <td>
+   	  			   <input type="text" name="" size="50" id="ps">
+   	  		   </td>
+   	  	   </tr>
+   	  	</table>
+   	  	</fieldset>
+   	  	<br><br>
+   	  	<center>
+   	  		<button onclick="det()"><a href="education.html"><b>SAVE</b></a></button>
+   	  	</center>
+		</fieldset>
+	</p>
+<p>
+	<fieldset style="background-color:white;">
+		<hr><h style=" color: darkred;">HELPDESK</h><hr>
+		Helpdesk Email ID :- rockranjeetkr@gmail.com <br>
+    	Helpline Number :- 9304911833 <br>
+      Call Between(10:00AM TO 5:00PM)<br>
+   </fieldset>
+</p>
+<script type="text/javascript">
+	function det(){
+		var name=document.getElementById("name").value;
+		var father=document.getElementById("fat").value;
+		var mother=document.getElementById("mot").value;
+		var DOB=document.getElementById("dob").value;
+		var state=document.getElementById("sta").value;
+		var district=document.getElementById("dis").value;
+		var village=document.getElementById("vill").value;
+		var post=document.getElementById("ps").value;
+		var pin=document.getElementById("pin").value;
+		var ps=document.getElementById("ps").value;
+		if (name=="") {
+			alert("Please Enter Your Name")
+		}
+		else if (father=="") {
+			alert("Please Enter Your Name")		
+		}
+		else if(mother==""){
+			alert("Please Enter Your Mother Name")
+		}
+		else if(DOB==""){
+			alert("Please Enter Your Date of Brith")
+		}
+		else if(state==""){
+			alert("Please Enter Your State Name")
+		}
+		else if(district==""){
+			alert("Please Enter Your District Name")
+		}
+		else if(village==""){
+			alert("Please Enter Your Village Name")
+		}
+		else if(post==""){
+			alert("Please Enter Your Post Office Name")
+		}
+		else if (pin=="") {
+			alert("Please Enter Your Pin Code")
+		}
+		else if(ps==""){
+			alert("Please Enter Your Police Station")
+		}
+		else{
+			alert("THANK YOU")
+		}
+	}
+</script>
+</body>
+</html>

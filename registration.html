@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>registration</title>
+	
+	<h2 align="center">OFFICE OF THE CONVENOR,CENTRALIZE SELECTION AND APPOINTMENT</h2>
+	<h2 align="center">COMMITTEE-CUM-DISTRICT & JUDGE,PATNA</h2>
+</head>
+<body style="background-color: yellow;">
+    <fieldset style="background-color:white;">
+		<center>
+            <a href="home.html" style="color: blue;">HOME</a>&nbsp;
+	        &nbsp;<a href="registration.html" style="color:blue;">REGISTRATION</a>&nbsp;
+	        &nbsp;<a href="detalis.html" style="color:blue;">DETALIS</a>&nbsp;
+	        &nbsp;<a href="education.html" style="color:blue;">EDUCATION</a>&nbsp;
+	        <a href="sing.html" style="color:blue;">SING</a>
+        </center>
+   </fieldset><br>
+   <p>
+   	<fieldset style="background-color: white;">
+   	<hr><h style="color: darkred;">IMPORTANT DATES</h><hr><br>
+   	<marquee scrollamount="15" direction="left" behavior="slide">
+   		<font color="red" size="3">Starting Date for Application 20th October 2022</font></marquee><br>
+   		<marquee scrollamount="15" direction="right" behavior="slide">
+   			<font color="green" size="3">Last Date for online Submission 17th December 2022</font>
+   	</marquee>
+   	</p></fieldset><br>
+   <fieldset style="background-color:white;">
+   	<b>
+   	<table cellspacing="10">
+		<tr>
+			<td align="left"><label>Name of Candidate</label></td>
+			<td>
+			:-	<input type="text" name="" size="70" id="name">
+			</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Father's Name</label></td>
+		<td>
+		:-	<input type="text" name="" size="70" id="fat">
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Mother's Name</label></td>
+		<td>
+		:-	<input type="text" name="" size="70" id="mot">
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Date of Brith :-</label></td>
+		<td>
+		:-	<input type="date" name="" size="70" id="dob">
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Sex </label></td>
+		<td>
+		:-	<select>
+				<option>---select---</option>
+				<option id="gen">Male</option>
+				<option id="gen">Female</option>
+				<option id="gen">Other</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Nationlity :-</label></td>
+		<td>
+		:-	<input type="text" name="" size="70" id="nat">
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Marital Status :-</label></td>
+		<td>
+		:-	<select>
+				<option>---select---</option>
+				<option id="mar">Married</option>
+				<option id=mar>Single</option>
+			</select>
+		</td>
+	</tr>
+			<tr>
+		<td align="left"><label>Email ID :-</label></td>
+		<td>
+		:-	<input type="text" name="" size="70" id="email">
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label >Create New Password :-</label></td>
+		<td>
+		:-	<input type="text" name="" size="70" id="pass">
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Confrome Password :-</label></td>
+		<td>
+		:-	<input type="text" name="" size="70" id="cpass">
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Mobile No :-</label></td>
+		<td>
+		:-	<input type="text" name="" size="70" id=mob>
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Catagory :-</label></td>
+		<td>
+		:-	<select >
+				<option>---select---</option>
+				<option id=cat>SC</option>
+				<option id="cat">ST</option>
+				<option id="cat">OBC</option>
+				<option id=cat>GEN</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Identity Prof :-</label></td>
+		<td>
+		:-	<select id="ide">
+				<option>---select---</option>
+				<option>Aadhaar</option>
+				<option>Votr ID</option>
+				<option>PAN Card</option>
+				<option>Indian Passport</option>
+				<option>Driving License</option>
+				<option>Ration Card</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td align="left"><label>Details of ID Prof :-</label></td>
+		<td>
+	    :-  <input type="text" name="" size="70" id="det">
+		</td>
+	</tr>
+</table><br><br>
+<center>
+<button onclick="regi()"><a href="home.html"><b>Registration</b></a></button></center><br><br>
+<span id="disp"></span><br><br>
+<span id="d"></span>
+<br>
+</b>
+</fieldset>
+<p><fieldset style="background-color:white;">
+	<hr><h style=" color: darkred;">HELPDESK</h><hr>
+	Helpdesk Email ID :- rockranjeetkr@gmail.com <br>
+    Helpline Number :- 9304911833 <br>
+    Call Between(10:00AM TO 5:00PM)<br>
+</fieldset>
+<script type="text/javascript">
+	function regi() {
+		var Name=document.getElementById("name").value;
+		var Father=document.getElementById("fat").value;
+		var Mother=document.getElementById("mot").value;
+		var DOB=document.getElementById("dob").value;
+		var Sex=document.getElementById("gen").value;
+		var Nat=document.getElementById("nat").value;
+		var Mar=document.getElementById("mar").value;
+		var Email=document.getElementById("email").value;
+		var Cpass=document.getElementById("pass").value;
+		var Ccpass=document.getElementById("cpass").value;
+		var Mob=document.getElementById("mob").value;
+		var Cat=document.getElementById("cat").value;
+		var Ide=document.getElementById("ide").value;
+		var Dide=document.getElementById("det").value;
+		if (Name=="") {
+			alert("Please Enter Your Name")
+		}
+		else if (Father=="") {
+			alert("Please Enter Your Father Name")
+		}
+		else if (Mother=="") {
+			alert("Please Enter Your Mother Name")
+		}
+		else if (DOB=="") {
+			alert("Please Enter Your Date of Brith")
+		}
+		else if (Sex=="") {
+			alert("Please Enter Your Gender")
+		}
+		else if (Nat=="") {
+			alert("Please Enter Your Nationlity")
+		}
+		else if (Mar=="") {
+			alert("Please Enter Your Marital Status")
+		}
+		else if(Email==""){
+			alert("Please Enter Your Email ID")
+		}
+		else if (Cpass=="") {
+			alert("Please Create New Password")
+		}
+		else if(Ccpass==""){
+			alert("Please Confrome Your New Password")
+		}
+		else if (Mob=="") {
+			alert("Please Enter Your Mobile Number")
+		}
+		else if (Cat=="") {
+			alert("Please Enter Your Catagory")
+		}
+		else if(Ide==""){
+			alert("Please Enter Your Identity")
+		}
+		else if(Dide==""){
+			alert("Please Enter Your  Identity Detalis")
+		}
+		else{
+			alert("Thanks For Successfully Registation")
+			document.getElementById("disp").innerHTML="Your ID :-" + Email
+		    document.getElementById("d").innerHTML="Your Password :-"+Cpass
+		}		
+	}
+</script>
+</body>
+</html>

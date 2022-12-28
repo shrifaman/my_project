@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js_DateObject</title>
+	<h1 align="center">Today is ---</h1>
+</head>
+<body><b>
+	<span id="disp"></span>
+    <span id="dat"></span> 
+    <span id="month"></span>
+    <span id="yer"></span>
+	<br><br>
+	<span id="hou"></span>
+	<span id="min"></span>
+    <span id="sec"></span>
+</b>
+	<script type="text/javascript">
+			var t= new Date();
+			var d=t.getDay();
+			
+			//ori.toDateString();
+			//today.setHours(12);
+			//today.setMinutes(3);
+			//today.setSeconds(110);
+			if (d==1) {
+				document.getElementById("disp").innerHTML="Today is Monday";
+			}
+			else if (d==2) {
+				document.getElementById("disp").innerHTML="Today is Tuesday";
+			}
+			else if (d==3) {
+				document.getElementById("disp").innerHTML="Today is Wednesday";
+			}
+			else if(d==4){
+				document.getElementById("disp").innerHTML="Today is Thursday";
+			}
+			else if (d==5) {
+				document.getElementById("disp").innerHTML="Today is Friday";
+			}
+			else if (d==6) {
+				document.getElementById("disp").innerHTML="Today is Saturday";
+			}
+			else{
+				document.getElementById("disp").innerHTML="Today is Sunday";
+			}
+			
+			function time() {
+				var j=new Date();
+				var h=j.getHours();
+			    var m=j.getMinutes();
+			    var s=j.getSeconds();
+			    //var d=j.getDate();
+			    //var m=j.getMonth();
+			    //document.getElementById("date").innerHTML="Date :-"+d;
+			    //document.getElementById("month").innerHTML=":"+m;
+			    document.getElementById("hou").innerHTML="Current_Time :- "+h;
+			    document.getElementById("min").innerHTML=":"+m;
+			    document.getElementById("sec").innerHTML=":"+s;			    	
+			}
+			setInterval(time,1000)
+			//function date(){
+				var date=new Date();
+				var da=date.getDate();
+				var mnth=date.getMonth();
+				var mon=mnth+1;
+				var year=date.getFullYear();
+				document.getElementById("dat").innerHTML="Date :-"+da;
+				document.getElementById("month").innerHTML="-"+mon;
+				document.getElementById("yer").innerHTML="-"+year;
+			//}
+			//setInterval(date)		
+	</script>
+</body>
+</html>
